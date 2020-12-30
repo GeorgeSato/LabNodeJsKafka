@@ -24,8 +24,8 @@ producer.on('error', function (err) {
 })
 
 
-let averageDelay = 3000;  // in miliseconds
-let spreadInDelay = 2000; // in miliseconds
+let averageDelay = 30000;  // in miliseconds
+let spreadInDelay = 20000; // in miliseconds
 var delay = averageDelay + (Math.random() - 0.5) * spreadInDelay;
 
 
