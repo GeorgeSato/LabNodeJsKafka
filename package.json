@@ -4,8 +4,7 @@
   "description": "pruebas de laboratorio",
   "main": "producer.js",
   "scripts": {
-    "start": "node ./src/producer.js",
-    "test": "node ./test/consumer.js"
+    "start": "node ./src/producer.js"
   },
   "author": "",
   "license": "ISC",
