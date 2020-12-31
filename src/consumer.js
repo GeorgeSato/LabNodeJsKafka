@@ -1,5 +1,5 @@
 let countriesTopic = "countries";
-
+//const client = new kafka.Client("http://localhost:2181");
 
 var options = {
     fromOffset: 'latest'
@@ -8,7 +8,7 @@ var options = {
 
 var kafka = require('kafka-node'),
     Consumer = kafka.Consumer,
-    client = new kafka.KafkaClient(),
+    client = new kafka.KafkaClient("http://localhost:2181"),
     consumer = new Consumer(
         client,
         [
