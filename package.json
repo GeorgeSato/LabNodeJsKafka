@@ -2,9 +2,9 @@
   "name": "kafka-nodejs-2",
   "version": "1.0.0",
   "description": "pruebas de laboratorio",
-  "main": "producer.js",
+  "main": "consumer.js",
   "scripts": {
-    "start": "node ./src/producer.js"
+    "start": "node ./src/consumer.js"
   },
   "author": "",
   "license": "ISC",
