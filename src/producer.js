@@ -1,18 +1,10 @@
 var requestClient = require('request-promise');
-//var kafka = require('kafka-node');
-const Kafka = require('kafka-node');
+var kafka = require('kafka-node');
+let kafkaHost = 'localhost:9092';
 
-const kafka = new Kafka({
-      clientId: 'my-producer',
-      brokers: ['localhost:9092', 'localhost:9093', 'localhost:9094']
-    })
-     
-
-
-//let Producer = kafka.Producer;
-const Producer = kafka.Producer;
+let Producer = kafka.Producer;
 let KeyedMessage = kafka.KeyedMessage;
-let client = new kafka.KafkaClient();
+let client = new kafka.KafkaClient({kafkaHost: kafkaHost});
 let producer = new Producer(client);
 
 
