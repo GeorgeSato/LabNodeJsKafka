@@ -1,6 +1,6 @@
 var requestClient = require('request-promise');
 var kafka = require('kafka-node');
-let kafkaHost = 'localhost:9092';
+let kafkaHost = '172.30.46.115:9092';
 
 let Producer = kafka.Producer;
 let KeyedMessage = kafka.KeyedMessage;
