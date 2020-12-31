@@ -8,7 +8,7 @@ var options = {
 
 var kafka = require('kafka-node'),
     Consumer = kafka.Consumer,
-    client = new kafka.KafkaClient("http://zookeeper:2181"),
+    client = new kafka.KafkaClient("http://172.30.46.115:2181"),
     consumer = new Consumer(
         client,
         [
